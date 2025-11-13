@@ -20,8 +20,6 @@ jobs:
           node-version: 24
       - name: Yarn install
         run: yarn install
-      - name: Yarn build
-        run: yarn build
 
       - name: Build and push
         uses: nais/docker-build-push@v0
