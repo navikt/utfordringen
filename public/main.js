@@ -35,6 +35,22 @@ const utfordringer = [
     }
 ]
 
+// TODO: deltaker med høyest score får gul trøye
+const lagTotalScoreObjekt = () => {
+    const listeOverTotalScores = []
+
+    utfordringer.map((utfordring, index) => {
+        if (index === 0) {
+            utfordring.poenger.map(poeng => {
+                listeOverTotalScores.push(poeng)
+            })
+        } else {
+            // 1. Finne om navn matcher i listen over total scores, hvis ja, oppdater objektet og legg til score
+            // 2. Hvis ikke legg til i listen over total scores
+        }
+    })
+}
+
 const listUtfordringer = () => {
     const rootKomponent = document.getElementById("utfordringer")
 
